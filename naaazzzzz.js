@@ -51,7 +51,7 @@ const isOwner = isCreator || (botNumber == m.sender) || (((global.db.data.settin
     	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
     
-if(!isOwner) return
+    
     const cmdEnable = ["autoreadsw","autoread"]
     const cmdMenu = ["enable","disable","jadibot","addowner","delowner","stopjadibot","listjadibot","listsw","getsesi","listowner","options"]
     const menuMenu = `╭─────✧ *Menu*
