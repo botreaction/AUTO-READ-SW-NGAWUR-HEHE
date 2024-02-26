@@ -106,7 +106,7 @@ conn.sendMessage(m.chat, { poll: { name: 'AUTO READ SW', values: cmdMenu, select
     break
     case 'jadibot': {
     	if(!isCreator) return m.reply(mess.owner) 
-        	if(!text) return m.reply(`masukan nomor user yang ingin di tambahkan ke jadibot!`) 
+        	if(!text) return m.reply(`masukan nomor user yang ingin di tambahkan ke jadibot!\n\ncontoh jadibot 6289xxxxxxx no yang mau jadi bot 👍`) 
     let user = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']
     let users = user[0]
     const isJadibot = (global.db.data.settings[users]?.type ?? false) == 'jadibot'
